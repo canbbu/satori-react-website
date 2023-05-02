@@ -9,7 +9,15 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "css-in-js-media": "^2.0.1",
+    "framer-motion": "^4.1.17",
+    "react-bootstrap": "^1.6.1",
+    "react-flagkit": "^2.0.4",
+    "react-icons": "^4.2.0",
+    "react-router-bootstrap": "^0.25.0",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

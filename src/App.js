@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Footer from "./components/Footer/Footer";
+import Navbar from "./components/Header/Header";
+import GlobalStyle from "./globalStyles";
+import DropdownTest from "./pages/DropdownTest";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <GlobalStyle />
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route exact path="/test" component={DropdownTest} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 
 export default App;
+
+// https://v6.exchangerate-api.com/v6/d56289915940c1af936db3b5/latest/USD
